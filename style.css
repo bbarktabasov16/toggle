@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Preahvihear&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Doodle+Shadow&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    height: 90vh;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* height: 35vh; */
+}
+.item {
+    background-image: url('https://www.w3schools.com/js/pic_bulboff.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 140px;
+    height: 250px;
+}
+.blockClass {
+    background-image: url('https://www.w3schools.com/js/pic_bulbon.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 140px;
+    height: 250px;
+}
+.light {
+    position: absolute;
+    border-radius: 50%;
+    width: 120px;
+    height: 130px;
+    margin-top: -14vh;
+    box-shadow: 0 0 150px yellow;
+}
+.container__btn button {
+    position: absolute;
+    margin-top: 40px;
+    margin-left: -60px;
+    width: 10vw;
+    min-width: 120px;
+    max-width: 120px;
+    height: 4vh;
+    min-height: 30px;
+    max-height: 40px;
+    border: none;
+    border-radius: 10px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.container__btn button:hover {
+    background-color: yellow;
+    border: 2px dashed orange;
+    color: grey;
+}
+.container__btn button:active {
+    background-color: red;
+    border: 2px dashed darkred;
+    color: grey;
+}
+
+@media (max-width: 950px) {
+    .container__btn button:hover {
+        background-color: #fff;
+        border: none;
+        color: black;
+    }
+}
